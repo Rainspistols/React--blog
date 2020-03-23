@@ -1,0 +1,9 @@
+.Logo {
+  text-align: center;
+  & a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #333;
+  }
+}
