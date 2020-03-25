@@ -1,4 +1,16 @@
+@import '../../global/global';
+
 .blogPost {
   width: 70%;
-  background: #fff;
+  text-align: center;
+  &__category {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  &__title {
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 0;
+  }
 }

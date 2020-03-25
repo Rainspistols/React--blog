@@ -2,7 +2,6 @@ import './Hero.scss';
 import React from 'react';
 import Card from '../UI/Card/Card';
 import Logo from '../Logo/Logo';
-import Navbar from '../Navbar/Navbar';
 
 const Hero = () => {
   return (
@@ -11,7 +10,6 @@ const Hero = () => {
         <div style={{ padding: '40px 0' }}>
           <Logo />
         </div>
-        <Navbar />
       </Card>
     </div>
   );

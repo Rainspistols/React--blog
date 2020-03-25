@@ -27,7 +27,7 @@
     @extend %font__size--14-16;
     &:hover,
     &:focus {
-      text-decoration: underline;
+      @extend %color__hover;
     }
   }
   .activeLink {
@@ -52,5 +52,9 @@
       width: 100%;
       height: 3px;
     }
+  }
+  .search__wrap {
+    margin-left: auto;
+    margin-right: 0;
   }
 }

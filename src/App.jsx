@@ -3,7 +3,7 @@ import './App.scss';
 import Home from './pages/Home/Home';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
-import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Post from './components/Post/Post';
 

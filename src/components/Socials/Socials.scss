@@ -1,0 +1,19 @@
+.socials {
+  li {
+    margin: 0 10px;
+  }
+  svg {
+    width: 30px;
+    height: auto;
+    fill: rgb(130, 130, 130);
+    &:hover,
+    &:focus {
+      fill: rgb(51, 51, 51);
+    }
+  }
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}

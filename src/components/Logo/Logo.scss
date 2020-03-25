@@ -1,8 +1,9 @@
+@import '../../global/global.scss';
+
 .Logo {
   text-align: center;
   & a {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
+    @extend %font__medium;
     font-size: 40px;
     color: #333;
   }

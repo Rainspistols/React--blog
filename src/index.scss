@@ -10,9 +10,6 @@ body {
 
 a {
   text-decoration: none;
-  &:hover {
-    @extend %color__hover;
-  }
 }
 
 ul {
