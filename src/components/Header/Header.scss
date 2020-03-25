@@ -1,16 +1,56 @@
+@import '../../global/global.scss';
+
 .header {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
-  &__nav a {
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #565673;
-    font-size: 12px;
-    letter-spacing: 1.2px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  @extend %font__regular;
+  height: 65px;
+
+  &__wrap {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
   }
-  &__nav a:hover {
-    color: #5f9ea0;
+
+  &__nav {
+    height: 100%;
+  }
+
+  &__nav a {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 20px;
+    height: 100%;
+    @extend %color__bold;
+    @extend %font__size--14-16;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+  .activeLink {
+    @extend %font__semi-bold;
+    position: relative;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      background-image: linear-gradient(
+        90deg,
+        rgb(131, 237, 184) 0%,
+        rgb(131, 237, 184) 0%,
+        rgb(131, 237, 184) 0.01%,
+        rgb(80, 188, 182) 33.15%,
+        rgb(239, 64, 86) 67.4%,
+        rgb(252, 182, 67) 100%
+      );
+      border-radius: 3px 3px 0px 0px;
+      width: 100%;
+      height: 3px;
+    }
   }
 }

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Graphik';
+  src: local('Graphik Extra light'), local('Graphik-Extra-light'),
+    url('./Graphik-Extralight.woff2') format('woff2'),
+    url('./Graphik-Extralight.woff') format('woff'),
+    url('./Graphik-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: local('Graphik Regular'), local('Graphik-Regular'),
+    url('./Graphik-Regular.woff2') format('woff2'),
+    url('./Graphik-Regular.woff') format('woff'),
+    url('./Graphik-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: local('Graphik Medium'), local('Graphik-Medium'),
+    url('./Graphik-Medium.woff2') format('woff2'),
+    url('./Graphik-Medium.woff') format('woff'),
+    url('./Graphik-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: local('Graphik Semi bold'), local('Graphik-Semi-bold'),
+    url('./Graphik-Semibold.woff2') format('woff2'),
+    url('./Graphik-Semibold.woff') format('woff'),
+    url('./Graphik-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}

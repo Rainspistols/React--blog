@@ -17,21 +17,30 @@
     font-weight: 400;
     padding: 0 10px;
   }
-  .search {
+  form {
+    height: 25px;
     display: flex;
     align-items: center;
+  }
+  .search {
     margin: 0 10px;
-    height: auto;
-    height: 25px;
+    height: 100%;
     input {
-      border: none;
       padding: 2px 10px;
       height: 100%;
+      margin-right: 5px;
+      border: none;
+      border-bottom: 1px solid #565673;
+      &:focus {
+        outline: none;
+      }
     }
     &__icon {
-      width: 20px;
+      width: 30px;
       height: auto;
       fill: #565673;
+      cursor: pointer;
+      z-index: 10;
     }
   }
 }

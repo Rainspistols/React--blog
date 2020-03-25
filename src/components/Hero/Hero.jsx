@@ -11,8 +11,8 @@ const Hero = () => {
         <div style={{ padding: '40px 0' }}>
           <Logo />
         </div>
+        <Navbar />
       </Card>
-      <Navbar />
     </div>
   );
 };

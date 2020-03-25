@@ -1,0 +1,22 @@
+@import 'global/global';
+
+body {
+  background: #fff;
+  @extend %font__regular;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    @extend %color__hover;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
