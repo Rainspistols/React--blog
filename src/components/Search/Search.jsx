@@ -1,42 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Search.scss';
-import { GoSearch } from 'react-icons/go';
-import posed from 'react-pose';
 
-const InputPose = posed.input({
-  active: {
-    opacity: 1,
-  },
-  notActive: {
-    opacity: 0,
-  },
-});
-
-const Search = () => {
-  const [searchActive, setSearchactive] = useState(false);
-  const activateSearch = () => setSearchactive(true);
-
-  const submitSearch = (e) => {
+const Search = ({ setSearchActive }) => {
+  const onCancelBtn = (e) => {
     e.preventDefault();
-    alert('Clicked Search');
+    setSearchActive(false);
+  };
+
+  const onSearchBtn = () => {
+    alert('search btn clicked');
   };
 
   return (
-    <div className='search'>
-      <form onSubmit={submitSearch}>
-        <InputPose
-          className='input'
-          type='search'
-          placeholder='Search'
-          pose={searchActive ? 'active' : 'notActive'}
-        />
-        <GoSearch
-          className='search__icon'
-          onClick={activateSearch}
-          alt='search'
-        />
-      </form>
-    </div>
+    <form className='search'>
+      <input type='search' placeholder=' Search' />
+      <div className='search__buttons'>
+        <button className='btn btn--cancel' onClick={onCancelBtn}>
+          Cancel
+        </button>
+        <button type='submit' className='btn btn--search' onClick={onSearchBtn}>
+          Search
+        </button>
+      </div>
+    </form>
   );
 };
 

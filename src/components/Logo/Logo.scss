@@ -1,10 +1,21 @@
 @import '../../global/global.scss';
 
-.Logo {
+.logo {
   text-align: center;
-  & a {
-    @extend %font__medium;
-    font-size: 40px;
-    color: #333;
+
+  &__link {
+    @extend %font__extra-light;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+  svg {
+    fill: #ef4056;
+    margin-right: 5px;
+    width: 30px;
+    height: auto;
+  }
+  img {
+    height: 25px;
   }
 }
