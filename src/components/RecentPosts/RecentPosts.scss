@@ -1,0 +1,32 @@
+@import '../../global/global.scss';
+
+.recentPosts {
+  position: fixed;
+  width: 15%;
+  &__item {
+    margin-bottom: 30px;
+  }
+  &__title {
+    color: rgb(51, 51, 51);
+    @extend %font__medium;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+    margin: 0 0 30px;
+  }
+  .recentPost {
+    &__title {
+      @extend %font__medium;
+      font-size: 14px;
+      line-height: 18px;
+      color: rgb(79, 79, 79);;
+      margin: 0 0 10px;
+    }
+    &__date {
+      color: #4f4f4f;
+      font-size: 12px;
+      line-height: 20px;
+      @extend %font__extra-light;
+    }
+  }
+}

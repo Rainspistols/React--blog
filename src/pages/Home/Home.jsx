@@ -1,11 +1,13 @@
 import React from 'react';
+import PostsGallery from '../../components/PostsGallery/PostsGallery';
+
 import './Home.scss';
 
 const Home = () => {
   return (
-    <>
-      <div>Home</div>
-    </>
+    <div className='home'>
+      <PostsGallery />
+    </div>
   );
 };
 

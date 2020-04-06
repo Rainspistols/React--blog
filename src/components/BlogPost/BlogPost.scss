@@ -1,16 +1,38 @@
-@import '../../global/global';
+@import '../../global/global.scss';
 
 .blogPost {
-  width: 70%;
-  text-align: center;
+  width: 100%;
   &__category {
-    font-size: 14px;
-    padding: 10px 0;
+    @extend %font__light;
+    font-size: 16px;
+    line-height: 24px;
+    @extend %color__light;
+    margin-bottom: 15px;
+    display: block;
+    text-decoration: underline;
   }
   &__title {
     letter-spacing: 0.5px;
     text-transform: capitalize;
-    font-size: 30px;
     margin: 0;
+    @extend %color__bold;
+    @extend %font__semi-bold;
+    font-size: 40px;
+  }
+  &__content {
+    line-height: 1.75em;
+    @extend %color__regular;
+    @extend %font__regular;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  &__img {
+    margin-bottom: 30px;
+  }
+  &__postedBy {
+    font-size: 14px;
+    line-height: 20px;
+    @extend %font__regular;
+    color: rgb(130, 130, 130);
   }
 }

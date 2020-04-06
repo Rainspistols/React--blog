@@ -1,0 +1,9 @@
+@import '../../global/global.scss';
+
+.postsGallery {
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  
+}

@@ -1,0 +1,9 @@
+.lessPopularPosts {
+  &__item {
+    height: calc(450px / 3);
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}

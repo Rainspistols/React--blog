@@ -2,11 +2,14 @@
 
 .header {
   border-bottom: 1px solid rgb(224, 224, 224);
+  background-color: $white;
+  width: 100%;
   @extend %font__regular;
   height: 65px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  position: fixed;
 
   &__nav {
     height: 100%;
@@ -15,7 +18,7 @@
   &__nav a {
     display: inline-flex;
     align-items: center;
-    margin: 0 20px;
+    padding: 0 20px;
     height: 100%;
     @extend %color__bold;
     @extend %font__size--14-16;

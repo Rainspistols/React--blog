@@ -1,4 +1,9 @@
+@import '../../../global/global.scss';
+
 .asideColumn {
   width: 20%;
   height: 100%;
+  background: $white;
+  padding: 0px 25px 0px 30px;
+  box-sizing: border-box;
 }

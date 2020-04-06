@@ -1,12 +1,43 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import BlogPostsService from '../services/blogPostsService';
+
 import './BlogPost.scss';
 
-const BlogPost = () => {
+const service = new BlogPostsService();
+
+const BlogPost = ({ match }) => {
+  const [activePost, setActivePost] = useState({});
+
+  useEffect(() => {
+    const neededPostId = +match.params.postId;
+    const neededPost = service.getPost(neededPostId);
+
+    setActivePost(neededPost);
+  }, [match.params.postId]);
+
+  const {
+    blogTitle,
+    blogCategory,
+    postedOn,
+    author,
+    blogImage,
+    blogText,
+    slug,
+  } = activePost;
+
   return (
     <div className='blogPost'>
-      <span className='blogPost__category'>Featured</span>
-      <h1 className='blogPost__title'>Beautiful is always beautiful</h1>
-      <span className='blogPost__postedBy'>posted on July 21, 2020 by Hannah Blogging Tips</span>
+      <h1 className='blogPost__title'>{blogTitle}</h1>
+      <span className='blogPost__category'>{blogCategory}</span>
+      <div className='blogPost__img'>
+        {blogImage && (
+          <img src={require(`../../blogpostImages/${blogImage}`)} alt={slug} />
+        )}
+      </div>
+
+      <p className='blogPost__content'>{blogText}</p>
+
+      <span className='blogPost__postedBy'>{`${postedOn} by ${author}`}</span>
     </div>
   );
 };

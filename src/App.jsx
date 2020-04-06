@@ -1,12 +1,14 @@
 import React from 'react';
-import './App.scss';
-import Home from './pages/Home/Home';
-import Header from './components/Header/Header';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
 import ContactUs from './pages/ContactUs/ContactUs';
-import Post from './components/Post/Post';
+import Posts from './pages/Posts/Posts';
+import Home from './pages/Home/Home';
 
-//Delete Hero ? Card ?
+// import blogPostsService from './components/services/blogPostsService';
+import './App.scss';
+
+//  Delete Hero ? Card ?
 
 function App() {
   return (
@@ -16,8 +18,9 @@ function App() {
 
         <Route path='/' exact component={Home} />
         <Route path='/contact' component={ContactUs} />
-        <Route path='/post' component={Post} />
+        <Route path='/posts/:postId' component={Posts} />
       </div>
+      {/* <Service /> */}
     </Router>
   );
 }
