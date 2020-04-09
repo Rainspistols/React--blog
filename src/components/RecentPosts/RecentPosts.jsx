@@ -18,7 +18,7 @@ const RecentPosts = () => {
 
   const buildPosts = posts.map(({ blogTitle, postedOn, id }) => (
     <div className='recentPosts__item' key={id}>
-      <NavLink to={`/posts/${id}`} className='recentPost'>
+      <NavLink to={`/React--blog/posts/${id}`} className='recentPost'>
         <h3 className='recentPost__title'>{blogTitle}</h3>
         <div className='postedOn__wrap' style={{ color: '#4f4f4f' }}>
           <FaRegClock />

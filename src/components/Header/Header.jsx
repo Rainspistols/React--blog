@@ -12,10 +12,10 @@ const Header = () => {
   const [searchActive, setSearchActive] = useState(false);
 
   const navItems = [
-    { title: 'Home', linkTo: '/', exact: true },
-    { title: 'About', linkTo: '/about' },
-    { title: 'Contact', linkTo: '/contact' },
-    { title: 'Posts', linkTo: '/posts/1' },
+    { title: 'Home', linkTo: '/React--blog/', exact: true },
+    { title: 'About', linkTo: '/React--blog/about' },
+    { title: 'Contact', linkTo: '/React--blog/contact' },
+    { title: 'Posts', linkTo: '/React--blog/posts/1' },
   ];
 
   const buildNav = navItems.map(({ title, linkTo, exact }) => (

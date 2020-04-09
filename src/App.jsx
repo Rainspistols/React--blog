@@ -16,9 +16,9 @@ function App() {
       <div className='App'>
         <Header />
 
-        <Route path='/' exact component={Home} />
-        <Route path='/contact' component={ContactUs} />
-        <Route path='/posts/:postId' component={Posts} />
+        <Route path='/React--blog/' exact component={Home} />
+        <Route path='/React--blog/contact' component={ContactUs} />
+        <Route path='/React--blog/posts/:postId' component={Posts} />
       </div>
       {/* <Service /> */}
     </Router>
