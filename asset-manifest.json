@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/React--blog/static/css/main.7dd0e21e.chunk.css",
+    "main.js": "/React--blog/static/js/main.1da13e20.chunk.js",
+    "main.js.map": "/React--blog/static/js/main.1da13e20.chunk.js.map",
+    "runtime-main.js": "/React--blog/static/js/runtime-main.9041da94.js",
+    "runtime-main.js.map": "/React--blog/static/js/runtime-main.9041da94.js.map",
+    "static/js/2.1631d9d2.chunk.js": "/React--blog/static/js/2.1631d9d2.chunk.js",
+    "static/js/2.1631d9d2.chunk.js.map": "/React--blog/static/js/2.1631d9d2.chunk.js.map",
+    "index.html": "/React--blog/index.html",
+    "precache-manifest.b00c9793137251ff6ed41baf0bc6811e.js": "/React--blog/precache-manifest.b00c9793137251ff6ed41baf0bc6811e.js",
+    "service-worker.js": "/React--blog/service-worker.js",
+    "static/css/main.7dd0e21e.chunk.css.map": "/React--blog/static/css/main.7dd0e21e.chunk.css.map",
+    "static/js/2.1631d9d2.chunk.js.LICENSE.txt": "/React--blog/static/js/2.1631d9d2.chunk.js.LICENSE.txt",
+    "static/media/MostPopularPosts.scss": "/React--blog/static/media/1.3f87ecb3.jpg",
+    "static/media/1.jpg": "/React--blog/static/media/1.a7e4c06c.jpg",
+    "static/media/2.jpg": "/React--blog/static/media/2.fd432a1f.jpg",
+    "static/media/3.jpg": "/React--blog/static/media/3.4b55213c.jpg",
+    "static/media/fonts.scss": "/React--blog/static/media/Graphik-Semibold.997ca93d.ttf",
+    "static/media/baby.jpg": "/React--blog/static/media/baby.80961a00.jpg",
+    "static/media/beautiful.jpg": "/React--blog/static/media/beautiful.4218ad92.jpg",
+    "static/media/fitness.jpg": "/React--blog/static/media/fitness.45c60c8a.jpg",
+    "static/media/hannah.svg": "/React--blog/static/media/hannah.33a1bcf7.svg",
+    "static/media/memories.jpg": "/React--blog/static/media/memories.13ad316b.jpg",
+    "static/media/woman.jpg": "/React--blog/static/media/woman.a67df138.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9041da94.js",
+    "static/js/2.1631d9d2.chunk.js",
+    "static/css/main.7dd0e21e.chunk.css",
+    "static/js/main.1da13e20.chunk.js"
+  ]
+}
