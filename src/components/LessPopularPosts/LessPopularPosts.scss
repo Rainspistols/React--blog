@@ -1,9 +1,22 @@
+@import '../../global/global.scss';
+
 .lessPopularPosts {
   &__item {
     height: calc(450px / 3);
+    position: relative;
+    border-right: 1px solid $white;
+    border-bottom: 1px solid $white;
   }
   img {
     object-fit: cover;
     width: 100%;
+  }
+  .CategoryAndTitle__position {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 100%;
+    transform: translateX(-50%);
+    text-align: center;
   }
 }

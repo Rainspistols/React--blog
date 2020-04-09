@@ -1,8 +1,6 @@
 @import '../../global/global.scss';
 
 .recentPosts {
-  position: fixed;
-  width: 15%;
   &__item {
     margin-bottom: 30px;
   }
@@ -19,14 +17,20 @@
       @extend %font__medium;
       font-size: 14px;
       line-height: 18px;
-      color: rgb(79, 79, 79);;
+      color: rgb(79, 79, 79);
       margin: 0 0 10px;
     }
     &__date {
-      color: #4f4f4f;
       font-size: 12px;
       line-height: 20px;
       @extend %font__extra-light;
+      margin-left: 10px;
+      display: block;
     }
+  }
+  .postedOn__wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
   }
 }

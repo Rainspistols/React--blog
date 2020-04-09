@@ -15,7 +15,7 @@ const Header = () => {
     { title: 'Home', linkTo: '/', exact: true },
     { title: 'About', linkTo: '/about' },
     { title: 'Contact', linkTo: '/contact' },
-    { title: 'Posts', linkTo: '/posts' },
+    { title: 'Posts', linkTo: '/posts/1' },
   ];
 
   const buildNav = navItems.map(({ title, linkTo, exact }) => (

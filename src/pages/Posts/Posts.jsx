@@ -7,11 +7,12 @@ import RecentPosts from '../../components/RecentPosts/RecentPosts';
 import './Posts.scss';
 
 const Posts = (props) => {
-
   return (
     <div className='posts'>
       <AsideColumn>
-        <RecentPosts />
+        <div className='RecentPosts__position'>
+          <RecentPosts />
+        </div>
       </AsideColumn>
 
       <MainColumn>

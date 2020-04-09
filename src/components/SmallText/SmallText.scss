@@ -1,0 +1,9 @@
+@import '../../global/global.scss';
+
+.SmallText {
+  line-height: 1.75em;
+  @extend %font__regular;
+  font-size: 12px;
+  text-align: justify;
+  @extend %color__regular;
+}

@@ -3,22 +3,17 @@ import './PostsGallery.scss';
 import MainColumn from '../UI/MainColumn/MainColumn';
 import AsideColumn from '../UI/AsideColumn/AsideColumn';
 import LessPopularPosts from '../LessPopularPosts/LessPopularPosts';
+import MostPopularPosts from '../MostPopularPosts/MostPopularPosts';
 
 const PostsGallery = () => {
   return (
     <div className='postsGallery'>
-      <AsideColumn width={'30%'}>
-        <LessPopularPosts />
-        <LessPopularPosts />
+      <AsideColumn>
         <LessPopularPosts />
       </AsideColumn>
 
-      <MainColumn width={'70%'}>
-        <section className='mostPopularPosts'>
-          <div>
-            <img src={require('../../blogpostImages/baby.jpg')} alt='' />
-          </div>
-        </section>
+      <MainColumn>
+        <MostPopularPosts />
       </MainColumn>
     </div>
   );

@@ -2,4 +2,8 @@
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
+  .RecentPosts__position {
+    position: fixed;
+    width: 15%;
+  }
 }

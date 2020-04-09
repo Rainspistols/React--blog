@@ -1,0 +1,22 @@
+@import '../../global/global.scss';
+
+.CategoryAndTitle {
+  .category {
+    color: white;
+    background: lightskyblue;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+    @extend %font__semi-bold;
+  }
+  .title {
+    @extend %font__semi-bold;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+}

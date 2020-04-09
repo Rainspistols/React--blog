@@ -1,0 +1,56 @@
+@import '../../global/global.scss';
+
+.HomePost {
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 1px solid #afaeae;
+  padding-bottom: 20px;
+  &__img-wrap {
+    height: 450px;
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  &__postText {
+    text-align: left;
+  }
+  &__img {
+    margin-bottom: 30px;
+  }
+  &__category {
+    @extend %font__light;
+    font-size: 16px;
+    line-height: 24px;
+    @extend %color__light;
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  &__title {
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    margin: 0;
+    @extend %color__bold;
+    @extend %font__semi-bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  &__postedBy {
+    font-size: 14px;
+    line-height: 20px;
+    @extend %font__regular;
+    color: rgb(130, 130, 130);
+    margin-bottom: 10px;
+    display: block;
+  }
+   &__content {
+    line-height: 1.75em;
+    @extend %color__regular;
+    @extend %font__regular;
+    font-size: 16px;
+    text-align: left;
+  }
+}
